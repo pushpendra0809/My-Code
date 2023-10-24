@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a, b,c=1,d ;
+    cin>>b;
+    for(;b>=c;b--)
+    cout<<2*b-1<<endl;
+    
+}
