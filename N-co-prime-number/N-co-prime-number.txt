@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,a,b,k,j,m,n;
+    cin>>k>>b;
+    for(i=1;i<=k;i++)
+    {
+        for(j=1;j<=b;j++)
+        {
+            for(m=i*j,n=i*j;m>=1;m--,n--)
+            {
+                if(i%m==0 && j%n==0)
+                break;
+            }
+             if(m==1 && n==1)
+             cout<<i<<","<<j<<endl;
+        }
+    }
+    
+}
