@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int nextprime (int);
+int isprime(int);
+int main()
+{
+    int a,i,j,m,n,k;
+    cin>>a;
+    for(i=2;i<=(a-i);i=nextprime(i))
+    {
+        if(isprime(a-i))
+        cout<<i<<"+"<<a-i<<"="<<a<<endl;
+    }
+}
+int nextprime(int n)
+{
+    do
+    n++;
+    while(!isprime(n));
+    return(n);
+}
+int isprime(int n)
+{
+    int i;
+    for(i=2;i<n;i++)
+    if(n%i==0)
+    return(0);
+    return(1);
+}
