@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a[10] ,i,j,k,swap;
+    for(i=0;i<=9;i++)
+    {
+        cin>>a[i];
+    }
+      for(i=0;i<=9;i++)
+      {
+           for(j=i+1;j<=9;j++)
+          {
+              if(a[i]>a[j])
+                {
+                   swap=a[j];
+                   a[j]=a[i];
+                   a[i]=swap;
+                }
+          }
+          cout<<a[i]<<endl;
+      }
+}
