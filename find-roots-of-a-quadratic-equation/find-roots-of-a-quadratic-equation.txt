@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a, b,c,d ;
+    float x,y;
+    cin>>a>>b>>c;
+    d=b*b-4*a*c;
+    if(d<0){
+    cout<<"root are imaginary";}
+    if(d==0){
+    cout<<"root are equal";
+    x=-b/(2.0*a);
+    cout<<x;}
+    if(d>0)
+{
+    cout<<"root are the real and distinct";
+    x=(b+sqrt(d))/(2*a);
+    y=(b-sqrt(d))/(2*a);
+    cout<<x<<y;
+}}
