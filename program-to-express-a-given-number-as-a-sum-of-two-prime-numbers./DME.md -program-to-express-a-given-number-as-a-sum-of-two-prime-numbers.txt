@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,i,j,m,n,k;
+    cin>>a;
+    for(i=1 ;i<=a/2;i++)
+    {
+    for(m=2;m<=i;m++)
+    {
+        if(i%m==0 )
+        break;
+    }
+     if(i==m )
+     //cout<<"m="<<m<<endl;
+     
+      for(n=2;n<=a-i;n++)
+    {k=a-i;
+        if(k%n==0 )
+        break;
+    }
+     if(k==n)
+     //cout<<"k="<<k<<endl;
+     if(k+m==a)
+     cout<<k<<","<<m<<endl;
+    }
+}
