@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,i,j,l;
+    cin>>j>>l;
+    for(;j<=l;j++)
+    {
+        a=j;
+    for(i=2;i<=a;i++)
+    {
+        if(a%i==0)
+        break;
+    }
+    if(i==a)
+    cout<<"its prime"<<a<<endl;
+    /*else
+    cout<<"its not prime";*/
+}}
