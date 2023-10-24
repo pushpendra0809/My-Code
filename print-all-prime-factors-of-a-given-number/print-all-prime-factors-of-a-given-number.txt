@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,i,j,l,k;
+    cin>>k;
+    for(i=2;i<=k; i++)
+    {
+       while(k%i==0)
+       {
+          cout<<i<<endl;
+          k=k/i;
+       }
+    }
+}
