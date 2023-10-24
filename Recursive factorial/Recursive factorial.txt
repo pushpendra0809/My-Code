@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int fic(int);
+int main()
+{
+    int a,total;
+    total=fic(5);
+    cout<<total;
+}
+int fic(int n)
+{
+    int s;
+    if(n==0)
+    return(1);
+    s=n*fic(n-1);
+    return(s);
+}
