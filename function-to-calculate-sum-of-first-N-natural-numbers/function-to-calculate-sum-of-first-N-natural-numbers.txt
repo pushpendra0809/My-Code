@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int sum(int);
+int main()
+{
+    int a,m;
+    cin>>a;
+    m=sum(a);
+    cout<<m;
+}
+int sum(int a)
+{
+    int i,n,m,j;
+    for(i=1;i<=a;i++)
+    {
+        n=n+i;
+    }
+    return(n);
+}
