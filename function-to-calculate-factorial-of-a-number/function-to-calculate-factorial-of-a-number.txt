@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int fic(int);
+int main()
+{
+    int p,r;
+    cin>>r;
+    p=fic(r);
+    cout<<p;
+}
+int fic(int a)
+{
+    int m,n=1;
+    
+    for(m=a;m>=1;m--)
+     n=n*m;
+     return(n);
+    
+    
+}
