@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,i,j,l;
+    cin>>a>>b;
+    for(i=2;i<=a*b;i++,j++)
+    {
+        if(j%a==0 && i%b==0)
+        break;
+    }
+    cout<<i;
+}
