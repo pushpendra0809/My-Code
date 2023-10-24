@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a=1,b,fib=-1,k;
+    cin>>k;
+    for(i=2;i<=k; i++)
+    {
+      fib=fib+a;
+      b=fib;
+      fib=a;
+      a=b;
+    }
+}
