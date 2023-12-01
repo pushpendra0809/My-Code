@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+int a,b,c;
+cout<<"Enter a number";
+cin>>a;
+c=a*a;
+cout<<"squre of a number "<<c<<"\n";
+
+while(c){
+b=b+c%10;
+c=c/10;
+}
+cout<<"sum of squre digit "<<b;
+}
