@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+int d,i,n;
+cout<<"Enter a Number ";
+cin>>d;
+n=d+1;
+while(1){
+     for(i=2;i<n;i++){
+     if(n%i==0){
+     break;}
+     }
+     if(i==n){
+     cout<<"next prime number is "<<n;
+     break;
+     }
+     n++;
+}
+}
