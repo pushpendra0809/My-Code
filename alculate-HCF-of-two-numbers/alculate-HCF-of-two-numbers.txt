@@ -4,11 +4,10 @@ int main()
 {
     int a,b,i,j,l;
     cin>>a>>b;
-    for(i=a*b,j=a*b;i>=1;i--,j--)
+    for(i=a*b;i>=1;i--,j--)
     {
-        if(a%j==0 && b%i==0)
+        if(a%i==0 && b%i==0)
+        cout<<i;
         break;
     }
-    if(i==j)
-    cout<<i;
 }
