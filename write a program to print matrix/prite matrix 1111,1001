@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int row=4, i, j, k;
+
+    for(i=0;i<=row-1;i++){
+        for(j=0;j<=row-1;j++){
+            if(i==0 || i==row-1 || j==0 || j==row-1){
+                cout<<1;
+            }else{
+                cout<<0;
+            }
+        }
+            cout<<endl;
+    }
+}
+
